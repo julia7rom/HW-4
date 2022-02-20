@@ -35,6 +35,10 @@ button {border:none ;}
   padding-bottom: 25px;
   border-bottom: 1px solid #ECECEC;
 }
+.contact-icon{
+  margin-right: 10px;
+  
+}
 .logo {font-family: 'Raleway', sans-serif;
 font-weight: bold;
 font-size: 26px;
@@ -49,11 +53,14 @@ margin-right: 93px;}
 }
 .site-naw {display: flex;
 align-items: center;}
-.site-naw-li:not( last child){
+.site-naw-li:not(:last-child){
   margin-right: 50px;
 }
 .contact-li:not(:last-child){
 margin-right: 50px;
+}
+.contact-svg{margin-right:10px;
+ 
 }
 .site-naw a {
 font-weight: 500;
@@ -67,26 +74,35 @@ color: #212121;}
 }
 .contact{display: flex;
 align-items: center;
-margin-left: auto;}
-.contact a {
+margin-left: auto;
+}
+.contact-a {
+background-image: ;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
+fill: #757575;
 }
-.contact a:hover,
-.contact a:focus {
+.contact-a:hover,
+.contact-a:focus {
   color: #2196f3;
+  fill: #2196f3;
 }
 /* меню */
 .herou {
+  background-image:linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+    url('../img/Img-personal.png');
+  background-size: cover;
   text-align: center;
-  background-color: #2F303A;
+  background-color:#C4C4C4;
   padding-top: 200px;
   padding-bottom: 200px;
   }
-
 h1 {
 font-family:'Roboto', sans-serif;
 font-weight: 900;
@@ -139,6 +155,31 @@ line-height:1.71;
 letter-spacing: 0.03em;
 color: #757575;
 }
+.arguments-li::before{
+  display: block;
+  content: "";
+  height:120px;
+  padding: 25px 100px;
+  background-repeat: no-repeat;
+  background-size: padding: 25px 100px;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom:30px;
+  }
+.arguments-li:nth-child(1)::before{
+  background-image: url("../img/antennaa.svg");
+}
+.arguments-li:nth-child(2)::before{
+  background-image: url("../img/clock.svg");
+}
+.arguments-li:nth-child(3)::before{
+  background-image: url("../img/diagram.svg");
+}
+.arguments-li:nth-child(4)::before{
+  background-image: url("../img/astronaut.svg");
+}
+
+.antenna 
 .section-padding{
   padding-top: 0;
 }
@@ -166,6 +207,7 @@ align-items: center;}
 }
 .team-li {
 }
+
 .name  {
 font-weight: 500;
 font-size: 16px;
@@ -182,9 +224,64 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color:#757575;
+margin-bottom: 16px;
 }
 .team-h-p{
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social-icons{
+  display: flex;
+}
+.social-list-item:not(:last-child){margin-right: 10px;}
+.social-icon-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-icon-list:hover,
+.social-icon-list:focus {
+  fill: #FFFFFF;
+  background-color: #2196F3 ;
+}
+.social-icon-list{
+  fill: #AFB1B8;
+}
+.client{
+  padding-top: 94px;
+}
+.client-a{
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8 ;
+  padding: 16px 32px;
+  cursor: pointer;
+  fill:#AFB1B8;
+}
+.client-li:hover,
+.client-li:focus {
+  border: 1px solid #2196F3;
+}
+.client-a:hover,
+.client-a:focus {
+  fill: #2196F3;
+}
+.client-ul{
+  display: flex;
+}
+.client-li:not(:last-child){
+  margin-right: 30px;
+  
+}
+.client-svg{
+  
+  
 }
 /* подвал */
 
@@ -276,3 +373,47 @@ color: #757575;
 .main-h-p{
   padding: 20px 24px;
   border: 1px solid #EEEEEE}
+
+  h5{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+  }
+  /* .footer-icons:not(:last-child){
+    margin-right: 10px;
+  } */
+.join {
+ display: block;
+ padding-top: 12px;
+}
+.logo-and-addres{
+display: block;
+margin-right: 70px;
+}
+.footer-too{
+  display:flex
+}
+.social-icon-list-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:#FFFFFF1A;
+  fill: #FFFFFF;
+}
+.social-icon-list-footer:hover,
+.social-icon-list-footer:focus{
+  background-color: #2196F3;
+  fill: #FFFFFF;
+}
+.contact-svg{
+  
+}
