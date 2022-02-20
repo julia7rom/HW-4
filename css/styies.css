@@ -100,7 +100,7 @@ fill: #757575;
   
   text-align: center;
   background-color:#C4C4C4;
- background-size: 1600px;
+  background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 200px;
@@ -212,7 +212,7 @@ align-items: center;}
 }
 .team-li {
   box-shadow: 0px 2px 1px 0px #00000033,0px 1px 1px 0px #00000024,0px 1px 3px 0px #0000001F;
-
+    background-color: #FFFFFF;
 }
 
 .name  {
@@ -261,34 +261,37 @@ margin-bottom: 16px;
 }
 .client{
   padding-top: 94px;
+   justify-content: center;
+  align-items: center;
 }
 .client-a{
-  display: block;
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8 ;
-  padding: 16px 32px;
   cursor: pointer;
   fill:#AFB1B8;
-}
-.client-li:hover,
-.client-li:focus {
-  border: 1px solid #2196F3;
+  align-items: center;
+  justify-content: center;
 }
 .client-a:hover,
 .client-a:focus {
   fill: #2196F3;
+  border-color: #2196F3;
+}
+.client-li{
+  
 }
 .client-ul{
   display: flex;
+  
 }
 .client-li:not(:last-child){
   margin-right: 30px;
   
 }
 .client-svg{
-  
-  
+
 }
 /* подвал */
 
@@ -324,8 +327,7 @@ padding-bottom: 60px;}
 .li-button-portfolio :hover,
 .button-portfolio  :focus {
   background-color:#2196F3;
-  color: var(--light-text-color)
-  background-color: var(--accept-color);
+  color: #FFFFFF;
 }
 .button-portfolio-ul {
 display: flex;
@@ -337,7 +339,7 @@ margin-bottom: 50px;
   padding: 6px 22px;
   font-family:'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   
@@ -424,6 +426,4 @@ margin-right: 70px;
 .main-li:hover,
 .main-li:focus{
   box-shadow: 1px 4px 6px 0px #00000029,0px 4px 4px 0px #0000000F,0px 1px 1px 0px #0000001F;
-  background: #FFFFFF;
-
 }
