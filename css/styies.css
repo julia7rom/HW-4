@@ -417,6 +417,9 @@ margin-right: 70px;
   background-color: #2196F3;
   fill: #FFFFFF;
 }
-.contact-svg{
-  
+.main-li:hover,
+.main-li:focus{
+  box-shadow: 1px 4px 6px 0px #00000029,0px 4px 4px 0px #0000000F,0px 1px 1px 0px #0000001F;
+  background: #FFFFFF;
+
 }
