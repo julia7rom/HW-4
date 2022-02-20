@@ -97,12 +97,16 @@ fill: #757575;
     rgba(47, 48, 58, 0.4)
   ),
     url('../img/Img-personal.png');
-  background-size: cover;
+  
   text-align: center;
   background-color:#C4C4C4;
+ background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   height:600px;
+  
   }
 h1 {
 font-family:'Roboto', sans-serif;
